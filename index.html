@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Material Test</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="titlebar">
+    <div class="titlebar-content">
+      <span>Background Material</span>
+    </div>
+    <div class="titlebar-controls">
+      <button id="minimize-btn" class="control-btn">_</button>
+      <button id="maximize-btn" class="control-btn">□</button>
+      <button id="close-btn" class="control-btn close">✕</button>
+    </div>
+  </div>
+  <div class="container">
+    <h1>Background Material</h1>
+
+    <div class="section">
+      <h3>Material</h3>
+      <div class="button-group">
+        <button class="btn" data-material="acrylic">Acrylic</button>
+        <button class="btn" data-material="mica">Mica</button>
+        <button class="btn" data-material="tabbed">Tabbed</button>
+        <button class="btn" data-material="auto">Auto</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Background Color (RGBA)</h3>
+      <div class="color-controls">
+        <div class="control-group">
+          <label>R:</label>
+          <input type="range" id="red" min="0" max="255" value="255">
+          <span id="red-value">255</span>
+        </div>
+        <div class="control-group">
+          <label>G:</label>
+          <input type="range" id="green" min="0" max="255" value="255">
+          <span id="green-value">255</span>
+        </div>
+        <div class="control-group">
+          <label>B:</label>
+          <input type="range" id="blue" min="0" max="255" value="255">
+          <span id="blue-value">255</span>
+        </div>
+        <div class="control-group">
+          <label>A:</label>
+          <input type="range" id="alpha" min="0" max="100" value="0">
+          <span id="alpha-value">0%</span>
+        </div>
+      </div>
+      <button id="apply-color" class="btn-primary">Apply</button>
+    </div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

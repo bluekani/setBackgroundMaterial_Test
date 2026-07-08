@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.exe
+*.dmg
+*.app
+*.zip
+*.tar.gz
+.DS_Store
+out/
+release/
